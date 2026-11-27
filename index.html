@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,12 +8,10 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
   <a class="skip-link" href="#main">Lewati ke konten</a>
 
@@ -64,44 +61,44 @@
           <svg viewBox="0 0 500 500" class="orbit-svg" focusable="false">
             <defs>
               <linearGradient id="gRing" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0" stop-color="#FF5B14" stop-opacity="0" />
-                <stop offset="0.35" stop-color="#FF5B14" />
-                <stop offset="0.7" stop-color="#FF9A3C" />
-                <stop offset="1" stop-color="#FF5B14" stop-opacity="0" />
+                <stop offset="0" stop-color="#FF5B14" stop-opacity="0"/>
+                <stop offset="0.35" stop-color="#FF5B14"/>
+                <stop offset="0.7" stop-color="#FF9A3C"/>
+                <stop offset="1" stop-color="#FF5B14" stop-opacity="0"/>
               </linearGradient>
               <linearGradient id="gRing2" x1="1" y1="0" x2="0" y2="1">
-                <stop offset="0" stop-color="#141210" stop-opacity="0" />
-                <stop offset="0.5" stop-color="#141210" stop-opacity=".55" />
-                <stop offset="1" stop-color="#141210" stop-opacity="0" />
+                <stop offset="0" stop-color="#141210" stop-opacity="0"/>
+                <stop offset="0.5" stop-color="#141210" stop-opacity=".55"/>
+                <stop offset="1" stop-color="#141210" stop-opacity="0"/>
               </linearGradient>
               <radialGradient id="gSphere" cx=".35" cy=".3" r=".9">
-                <stop offset="0" stop-color="#4a443e" />
-                <stop offset=".45" stop-color="#1c1917" />
-                <stop offset="1" stop-color="#0a0908" />
+                <stop offset="0" stop-color="#4a443e"/>
+                <stop offset=".45" stop-color="#1c1917"/>
+                <stop offset="1" stop-color="#0a0908"/>
               </radialGradient>
               <radialGradient id="gGlow" cx=".5" cy=".5" r=".5">
-                <stop offset="0" stop-color="#FF5B14" stop-opacity=".35" />
-                <stop offset="1" stop-color="#FF5B14" stop-opacity="0" />
+                <stop offset="0" stop-color="#FF5B14" stop-opacity=".35"/>
+                <stop offset="1" stop-color="#FF5B14" stop-opacity="0"/>
               </radialGradient>
             </defs>
 
-            <circle cx="250" cy="250" r="240" fill="url(#gGlow)" />
+            <circle cx="250" cy="250" r="240" fill="url(#gGlow)"/>
 
             <g class="orbit orbit-a">
-              <ellipse cx="250" cy="250" rx="232" ry="84" transform="rotate(-24 250 250)" fill="none"
-                stroke="url(#gRing2)" stroke-width="2" />
+              <ellipse cx="250" cy="250" rx="232" ry="84" transform="rotate(-24 250 250)"
+                       fill="none" stroke="url(#gRing2)" stroke-width="2"/>
             </g>
 
-            <circle cx="250" cy="250" r="128" fill="url(#gSphere)" />
-            <ellipse cx="212" cy="196" rx="46" ry="26" fill="#fff" opacity=".08" transform="rotate(-30 212 196)" />
+            <circle cx="250" cy="250" r="128" fill="url(#gSphere)"/>
+            <ellipse cx="212" cy="196" rx="46" ry="26" fill="#fff" opacity=".08" transform="rotate(-30 212 196)"/>
 
             <g class="orbit orbit-b">
-              <ellipse cx="250" cy="250" rx="226" ry="78" transform="rotate(-24 250 250)" fill="none"
-                stroke="url(#gRing)" stroke-width="12" stroke-linecap="round" />
+              <ellipse cx="250" cy="250" rx="226" ry="78" transform="rotate(-24 250 250)"
+                       fill="none" stroke="url(#gRing)" stroke-width="12" stroke-linecap="round"/>
             </g>
             <g class="orbit orbit-c">
-              <ellipse cx="250" cy="250" rx="198" ry="60" transform="rotate(-24 250 250)" fill="none"
-                stroke="url(#gRing)" stroke-width="3" stroke-linecap="round" opacity=".8" />
+              <ellipse cx="250" cy="250" rx="198" ry="60" transform="rotate(-24 250 250)"
+                       fill="none" stroke="url(#gRing)" stroke-width="3" stroke-linecap="round" opacity=".8"/>
             </g>
           </svg>
           <div class="art-core"><i class="bi bi-mortarboard-fill"></i></div>
@@ -135,8 +132,7 @@
             <label for="nama">Nama</label>
             <div class="input-wrap">
               <i class="bi bi-person" aria-hidden="true"></i>
-              <input type="text" id="nama" name="nama" autocomplete="name" placeholder="Nama lengkap" required
-                aria-describedby="namaErr">
+              <input type="text" id="nama" name="nama" autocomplete="name" placeholder="Nama lengkap" required aria-describedby="namaErr">
             </div>
             <p class="error" id="namaErr" role="alert"></p>
           </div>
@@ -145,8 +141,7 @@
             <label for="gmail">Gmail</label>
             <div class="input-wrap">
               <i class="bi bi-envelope" aria-hidden="true"></i>
-              <input type="email" id="gmail" name="gmail" autocomplete="email" inputmode="email"
-                placeholder="nama@gmail.com" required aria-describedby="gmailErr">
+              <input type="email" id="gmail" name="gmail" autocomplete="email" inputmode="email" placeholder="nama@gmail.com" required aria-describedby="gmailErr">
             </div>
             <p class="error" id="gmailErr" role="alert"></p>
           </div>
@@ -155,10 +150,8 @@
             <label for="password">Password</label>
             <div class="input-wrap">
               <i class="bi bi-lock" aria-hidden="true"></i>
-              <input type="password" id="password" name="password" autocomplete="current-password"
-                placeholder="Minimal 6 karakter" required aria-describedby="passwordErr">
-              <button type="button" class="toggle-pass" id="togglePass" aria-label="Tampilkan password"
-                aria-pressed="false">
+              <input type="password" id="password" name="password" autocomplete="current-password" placeholder="Minimal 6 karakter" required aria-describedby="passwordErr">
+              <button type="button" class="toggle-pass" id="togglePass" aria-label="Tampilkan password" aria-pressed="false">
                 <i class="bi bi-eye" aria-hidden="true"></i>
               </button>
             </div>
@@ -167,8 +160,7 @@
 
           <div class="login-actions">
             <a href="#/" class="btn btn-ghost"><i class="bi bi-arrow-left" aria-hidden="true"></i> Kembali</a>
-            <button type="submit" class="btn btn-accent">Submit <i class="bi bi-arrow-right"
-                aria-hidden="true"></i></button>
+            <button type="submit" class="btn btn-accent">Submit <i class="bi bi-arrow-right" aria-hidden="true"></i></button>
           </div>
         </form>
       </div>
@@ -187,6 +179,11 @@
       <ul class="menu-grid" id="menuGrid"></ul>
     </section>
 
+    <!-- ============ HALAMAN MODUL (8 kartu menu) ============ -->
+    <section class="page page-module" data-page="module" aria-label="Halaman modul" hidden>
+      <div id="moduleRoot"></div>
+    </section>
+
   </main>
 
   <footer class="site-footer">
@@ -198,5 +195,4 @@
 
   <script src="main.js"></script>
 </body>
-
 </html>
