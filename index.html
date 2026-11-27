@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SIMOM · UIN Ar-Raniry Banda Aceh</title>
+  <meta name="description" content="SIMOM, Sistem Informasi Manajemen Organisasi Mahasiswa UIN Ar-Raniry Banda Aceh.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten</a>
+
+  <!-- Header bersama untuk semua halaman -->
+  <header class="site-header">
+    <a class="brand" href="#/" aria-label="SIMOM, kembali ke beranda">
+      <span class="brand-mark"><i class="bi bi-mortarboard-fill" aria-hidden="true"></i></span>
+      <span class="brand-text">SIMOM</span>
+    </a>
+
+    <nav class="header-nav" aria-label="Navigasi utama">
+      <a href="#/" class="nav-link" data-nav="home">Beranda</a>
+      <a href="#/login" class="nav-link" data-nav="login">Masuk</a>
+      <a href="#/menu" class="nav-link" data-nav="menu">Menu</a>
+    </nav>
+
+    <div class="header-action">
+      <a href="#/login" class="btn btn-outline btn-sm" id="headerLogin">
+        Log in <i class="bi bi-arrow-right" aria-hidden="true"></i>
+      </a>
+      <button type="button" class="btn btn-outline btn-sm" id="headerLogout" hidden>
+        <i class="bi bi-box-arrow-right" aria-hidden="true"></i> Keluar
+      </button>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+
+    <!-- ============ HALAMAN 1 · BERANDA ============ -->
+    <section class="page page-home" data-page="home" aria-labelledby="homeTitle">
+      <div class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span>Banda Aceh</p>
+          <p class="campus">Universitas Islam Negeri<br>Ar-Raniry</p>
+          <h1 id="homeTitle" class="display">SIMOM<span class="dot">.</span></h1>
+          <p class="hero-sub">Sistem Informasi Manajemen Organisasi Mahasiswa</p>
+          <p class="hero-note">Platform digital mahasiswa</p>
+
+          <div class="hero-actions">
+            <a href="#/login" class="btn btn-primary btn-lg">
+              Log in <i class="bi bi-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <svg viewBox="0 0 500 500" class="orbit-svg" focusable="false">
+            <defs>
+              <linearGradient id="gRing" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#FF5B14" stop-opacity="0" />
+                <stop offset="0.35" stop-color="#FF5B14" />
+                <stop offset="0.7" stop-color="#FF9A3C" />
+                <stop offset="1" stop-color="#FF5B14" stop-opacity="0" />
+              </linearGradient>
+              <linearGradient id="gRing2" x1="1" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#141210" stop-opacity="0" />
+                <stop offset="0.5" stop-color="#141210" stop-opacity=".55" />
+                <stop offset="1" stop-color="#141210" stop-opacity="0" />
+              </linearGradient>
+              <radialGradient id="gSphere" cx=".35" cy=".3" r=".9">
+                <stop offset="0" stop-color="#4a443e" />
+                <stop offset=".45" stop-color="#1c1917" />
+                <stop offset="1" stop-color="#0a0908" />
+              </radialGradient>
+              <radialGradient id="gGlow" cx=".5" cy=".5" r=".5">
+                <stop offset="0" stop-color="#FF5B14" stop-opacity=".35" />
+                <stop offset="1" stop-color="#FF5B14" stop-opacity="0" />
+              </radialGradient>
+            </defs>
+
+            <circle cx="250" cy="250" r="240" fill="url(#gGlow)" />
+
+            <g class="orbit orbit-a">
+              <ellipse cx="250" cy="250" rx="232" ry="84" transform="rotate(-24 250 250)" fill="none"
+                stroke="url(#gRing2)" stroke-width="2" />
+            </g>
+
+            <circle cx="250" cy="250" r="128" fill="url(#gSphere)" />
+            <ellipse cx="212" cy="196" rx="46" ry="26" fill="#fff" opacity=".08" transform="rotate(-30 212 196)" />
+
+            <g class="orbit orbit-b">
+              <ellipse cx="250" cy="250" rx="226" ry="78" transform="rotate(-24 250 250)" fill="none"
+                stroke="url(#gRing)" stroke-width="12" stroke-linecap="round" />
+            </g>
+            <g class="orbit orbit-c">
+              <ellipse cx="250" cy="250" rx="198" ry="60" transform="rotate(-24 250 250)" fill="none"
+                stroke="url(#gRing)" stroke-width="3" stroke-linecap="round" opacity=".8" />
+            </g>
+          </svg>
+          <div class="art-core"><i class="bi bi-mortarboard-fill"></i></div>
+        </div>
+      </div>
+
+      <div class="cta-band">
+        <div>
+          <h2>Satu tempat untuk seluruh kegiatan organisasi.</h2>
+          <p>Anggota, program kerja, keuangan, sampai laporan, tersusun rapi dan bisa dipantau bersama.</p>
+        </div>
+        <a href="#/login" class="btn btn-accent">Log in <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+      </div>
+    </section>
+
+    <!-- ============ HALAMAN 2 · LOGIN ============ -->
+    <section class="page page-login" data-page="login" aria-labelledby="loginTitle" hidden>
+      <div class="login-stage">
+        <span class="float-tile ft-1"><i class="bi bi-clipboard2-data" aria-hidden="true"></i></span>
+        <span class="float-tile ft-2"><i class="bi bi-pc-display-horizontal" aria-hidden="true"></i></span>
+        <span class="float-tile ft-3"><i class="bi bi-file-earmark-bar-graph" aria-hidden="true"></i></span>
+        <span class="float-tile ft-4"><i class="bi bi-graph-up-arrow" aria-hidden="true"></i></span>
+
+        <form class="login-card" id="loginForm" novalidate>
+          <div class="login-head">
+            <h1 id="loginTitle">Masuk ke SIMOM</h1>
+            <p>Isi data berikut untuk membuka menu organisasi.</p>
+          </div>
+
+          <div class="field">
+            <label for="nama">Nama</label>
+            <div class="input-wrap">
+              <i class="bi bi-person" aria-hidden="true"></i>
+              <input type="text" id="nama" name="nama" autocomplete="name" placeholder="Nama lengkap" required
+                aria-describedby="namaErr">
+            </div>
+            <p class="error" id="namaErr" role="alert"></p>
+          </div>
+
+          <div class="field">
+            <label for="gmail">Gmail</label>
+            <div class="input-wrap">
+              <i class="bi bi-envelope" aria-hidden="true"></i>
+              <input type="email" id="gmail" name="gmail" autocomplete="email" inputmode="email"
+                placeholder="nama@gmail.com" required aria-describedby="gmailErr">
+            </div>
+            <p class="error" id="gmailErr" role="alert"></p>
+          </div>
+
+          <div class="field">
+            <label for="password">Password</label>
+            <div class="input-wrap">
+              <i class="bi bi-lock" aria-hidden="true"></i>
+              <input type="password" id="password" name="password" autocomplete="current-password"
+                placeholder="Minimal 6 karakter" required aria-describedby="passwordErr">
+              <button type="button" class="toggle-pass" id="togglePass" aria-label="Tampilkan password"
+                aria-pressed="false">
+                <i class="bi bi-eye" aria-hidden="true"></i>
+              </button>
+            </div>
+            <p class="error" id="passwordErr" role="alert"></p>
+          </div>
+
+          <div class="login-actions">
+            <a href="#/" class="btn btn-ghost"><i class="bi bi-arrow-left" aria-hidden="true"></i> Kembali</a>
+            <button type="submit" class="btn btn-accent">Submit <i class="bi bi-arrow-right"
+                aria-hidden="true"></i></button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ HALAMAN 3 · MENU ============ -->
+    <section class="page page-menu" data-page="menu" aria-labelledby="menuTitle" hidden>
+      <div class="menu-head">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-line"></span>Menu utama</p>
+          <h1 id="menuTitle">Halo, <span id="userName">Mahasiswa</span>.</h1>
+          <p class="menu-sub">Pilih bagian organisasi yang ingin kamu kelola.</p>
+        </div>
+      </div>
+
+      <ul class="menu-grid" id="menuGrid"></ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span id="year">2026</span> SIMOM · UIN Ar-Raniry Banda Aceh. Hak cipta dilindungi.</span>
+    <span>Dibuat oleh Wildan Mumtaz</span>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
